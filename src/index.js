@@ -3,12 +3,13 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import 'bootstrap/dist/css/bootstrap.css'
+import Alert from './components/alert';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <Alert text="Cảnh báo! Tài nguyên bạn vừa truy cập không tồn tại." />
 );
 
 // If you want to start measuring performance in your app, pass a function
